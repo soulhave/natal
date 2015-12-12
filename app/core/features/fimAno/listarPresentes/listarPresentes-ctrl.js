@@ -3,7 +3,7 @@
 /*
     Controller for the feature listarPresentes
 */
-jd.factory.newController('app.core.fimAno.listarPresentes.listarPresentesCtrl', ['jedi.dialogs.AlertHelper', 'toastr', function (alertHelper, toastr) {
+jd.factory.newController('app.core.fimAno.listarPresentes.listarPresentesCtrl', ['jedi.dialogs.AlertHelper', '$http', function (alertHelper, $http) {
 
     //#region Service initialize
     var service;// = ... e.g: restangular instance
@@ -11,26 +11,30 @@ jd.factory.newController('app.core.fimAno.listarPresentes.listarPresentesCtrl', 
 
     //#region View/Model initialize
     var vm = this;
-    vm.listarPresentesModel = {};
+    vm.model = {};
     //#endregion
 
     //#region Events binds
-    vm.method1 = method1;
-    vm.method2 = method2;
+    vm.carregarPresentes = carregarPresentes;
+    
     //#endregion
 
     //#region Load controller
-    method2();
+    carregarPresentes();
     //#endregion
 
     //#region Events definitions
-    function method1() {
-        alertHelper.addInfo('Method1 called');
+    function carregarPresentes() {                
+        $http.get('http://localhost:3000/listaPresentes')
+            .success(function(data) {
+                vm.model.listaPresentes=data;
+            }).error(function(data,status,error,config){
+                alertHelper.addError('Entre em contato com a Ti!');
+            });
+
+
     }
 
-    function method2() {
-        toastr.success('Method2 called');
-    }
     //#endregion
 
 }]);

@@ -1,0 +1,44 @@
+{
+  "listaPresentes": [
+    {
+      "id": 1,
+      "nome": "Ramon Mendes",
+      "idade": 30,
+      "presente": "Range Rover - Evoque 2015",
+      "endereco": "Rua das Ostras, 95",
+      "telefone": "031987641302"
+    },
+    {
+      "id": 2,
+      "nome": "Tatiana Abelha",
+      "idade": 21,
+      "presente": "Range Rover - Evoque 2015",
+      "endereco": "Rua das Ostras, 95",
+      "telefone": "031987641302"
+    },
+    {
+      "id": 3,
+      "nome": "Mariana Mendes",
+      "idade": 28,
+      "presente": "Range Rover - Evoque 2015",
+      "endereco": "Rua das Ostras, 95",
+      "telefone": "031987641302"
+    },
+    {
+      "id": 4,
+      "nome": "Márcia Mendes",
+      "idade": 52,
+      "presente": "Range Rover - Evoque 2015",
+      "endereco": "Rua das Ostras, 95",
+      "telefone": "031987641302"
+    },
+    {
+      "id": 5,
+      "nome": "Uilson Valdete de Souza",
+      "idade": 54,
+      "presente": "Ferrari California 2015",
+      "endereco": "Rua G 48",
+      "telefone": "031987641302"
+    }
+  ]
+}

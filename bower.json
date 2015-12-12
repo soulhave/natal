@@ -41,7 +41,8 @@
     "ng-jedi-activities": ">=0.0.1",
     "ng-jedi-table": ">=0.0.1",
     "requirejs-plugins": "~1.0.3",
-    "angular-toastr": "~1.4.1"
+    "angular-toastr": "~1.4.1",
+    "currycatcryptojs": "*"
   },
   "resolutions": {
     "angular": "=1.4.4"
